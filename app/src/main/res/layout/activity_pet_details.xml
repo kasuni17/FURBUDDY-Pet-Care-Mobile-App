@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg16"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/MHDTital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Manage Pet Details"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/Pet_Img"
+        android:layout_width="113dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/rmnum"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MHDTital"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/rmnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#AE8686"
+        android:ems="10"
+        android:hint="Name of the Pet"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="@+id/MHDTital"
+        app:layout_constraintTop_toBottomOf="@+id/MHDTital" />
+
+    <EditText
+        android:id="@+id/bthrmnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#AE8686"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/rmnum"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rmnum"
+        app:layout_constraintTop_toBottomOf="@+id/rmnum" />
+
+    <EditText
+        android:id="@+id/fcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#AE8686"
+        android:ems="10"
+        android:hint="Sex"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/bthrmnumber"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sfcount"
+        app:layout_constraintTop_toBottomOf="@+id/sfcount" />
+
+    <EditText
+        android:id="@+id/sfcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#AE8686"
+        android:ems="10"
+        android:hint="Breed"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/bthrmnumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bthrmnumber"
+        app:layout_constraintTop_toBottomOf="@+id/bthrmnumber" />
+
+    <EditText
+        android:id="@+id/Pet_Owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#AE8686"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="@+id/Pet_Img"
+        app:layout_constraintTop_toBottomOf="@+id/Pet_Img" />
+
+    <EditText
+        android:id="@+id/HID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#AE8686"
+        android:ems="10"
+        android:hint="color"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="@+id/Pet_Img"
+        app:layout_constraintTop_toBottomOf="@+id/Pet_Img" />
+
+    <EditText
+        android:id="@+id/Pet_Contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#AE8686"
+        android:ems="10"
+        android:hint="Email "
+        android:inputType="textPostalAddress"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Pet_Owner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Pet_Owner"
+        app:layout_constraintTop_toBottomOf="@+id/Pet_Owner" />
+
+    <EditText
+        android:id="@+id/house_Contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#AE8686"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="textPostalAddress"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Pet_Owner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Pet_Owner"
+        app:layout_constraintTop_toBottomOf="@+id/Pet_Owner" />
+
+    <EditText
+        android:id="@+id/Pet_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#AE8686"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Pet_Contact"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Pet_Contact"
+        app:layout_constraintTop_toBottomOf="@+id/Pet_Contact" />
+
+    <Button
+        android:id="@+id/btnveiw"
+        android:layout_width="82dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="findH"
+        android:text="Find"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbtn" />
+
+    <Button
+        android:id="@+id/btnhbmate"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="selectImage"
+        android:text="Add image"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/btnveiw"
+        app:layout_constraintTop_toBottomOf="@+id/addbtn" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="183dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="updateH"
+        android:text="update Manager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/btnhbmate" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="101dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="cleartxt"
+        android:text="clear all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnveiw" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="92dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="insertpet"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pet_Add" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="89dp"
+        android:layout_height="42dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="viewadd"
+        android:text="View"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/HID" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="111dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="deleteH"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toEndOf="@+id/addbtn"
+        app:layout_constraintTop_toBottomOf="@+id/Pet_Add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg12"
+    tools:context="com.example.pet_care_app.caregiverDASHBOARD">
+
+    <Button
+        android:id="@+id/cl_vj"
+        android:layout_width="213dp"
+        android:layout_height="55dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="viewjb"
+        android:text="View Jobs"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <Button
+        android:id="@+id/cl_feed"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="feedbk"
+        android:text="FeedBacks"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cl_vj"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cl_vj"
+        app:layout_constraintTop_toBottomOf="@+id/cl_vj" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

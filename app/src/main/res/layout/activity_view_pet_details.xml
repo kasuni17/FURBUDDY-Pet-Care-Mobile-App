@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lblname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bd30"
+    tools:context="com.example.pet_care_app.ViewPetDetails">
+
+    <ImageView
+        android:id="@+id/hdimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/hsdetails"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hsdetails"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/hsdetails"
+        android:layout_width="262dp"
+        android:layout_height="65dp"
+        android:text="Pet Details"
+        android:textAlignment="center"
+        android:textColor="#0B3577"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="285dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#92311B92"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/insaddress"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/insaddress"
+        app:layout_constraintTop_toBottomOf="@+id/insaddress"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/lblhouseRooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblhouseBathrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:text="Age"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblhouseFlooring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:text="Sex"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblhousePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:text="Breed"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/insid"
+        android:layout_width="171dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#92311B92"
+        app:layout_constraintEnd_toEndOf="@+id/hsdetails"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/hdimg"
+        app:layout_constraintTop_toBottomOf="@+id/hsdetails"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/insname"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#92311B92"
+        app:layout_constraintEnd_toEndOf="@+id/insid"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/hdimg"
+        app:layout_constraintTop_toBottomOf="@+id/insid" />
+
+    <TextView
+        android:id="@+id/insnumber"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#92311B92"
+        app:layout_constraintEnd_toEndOf="@+id/insname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/hdimg"
+        app:layout_constraintTop_toBottomOf="@+id/insname" />
+
+    <TextView
+        android:id="@+id/insaddress"
+        android:layout_width="262dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#92311B92"
+        android:textColor="#0E0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insnumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
